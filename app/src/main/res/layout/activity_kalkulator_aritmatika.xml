@@ -1,0 +1,85 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:paddingTop="32dp"
+    tools:context=".KalkulatorAritmatika">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, Username!"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+<EditText
+        android:id="@+id/edangka1"
+        android:layout_margin="10dp"
+        android:hint="Angka 1"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edangka2"
+        android:layout_margin="10dp"
+        android:hint="Angka 2"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btntambah"
+        android:text="+"
+        android:backgroundTint="#2563EB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnkurang"
+        android:text="-"
+        android:backgroundTint="#2563EB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnkali"
+        android:text="x"
+        android:backgroundTint="#2563EB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnbagi"
+        android:text="÷"
+        android:backgroundTint="#2563EB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txthasil"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnclear"
+        android:text="clear"
+        android:backgroundTint="#DC2626"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+  </LinearLayout>
